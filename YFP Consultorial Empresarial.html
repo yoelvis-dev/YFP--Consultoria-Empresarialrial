@@ -1,0 +1,261 @@
+<html><head><base href="https://www.yfp-consultoria.com/"><title>YFP - Consultoría Empresarial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --primary-blue: #1e40af;
+    --secondary-blue: #3b82f6;
+    --primary-gray: #4b5563;
+    --light-gray: #f3f4f6;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--primary-gray);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: var(--secondary-blue);
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-gray);
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .hero {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .info-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .info-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  footer {
+    background-color: var(--primary-gray);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .editable {
+    position: relative;
+    padding: 5px;
+    border: 1px dashed transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .editable:hover {
+    border-color: var(--secondary-blue);
+  }
+  
+  .edit-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--secondary-blue);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .editable:hover .edit-btn {
+    display: block;
+  }
+  
+  .edit-mode {
+    border: 1px solid var(--secondary-blue);
+    padding: 5px;
+  }
+  
+  .edit-mode .edit-btn {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>YFP</h1>
+    <p>Consultoría Empresarial</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="inicio" class="hero">
+      <h2 class="editable">Bienvenido a YFP Consultoría<button class="edit-btn">Editar</button></h2>
+      <p class="editable">Impulsando el éxito de su negocio con soluciones estratégicas<button class="edit-btn">Editar</button></p>
+    </section>
+    
+    <section id="servicios" class="info-section">
+      <h2 class="editable">Nuestros Servicios<button class="edit-btn">Editar</button></h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3 class="editable">Consultoría Estratégica<button class="edit-btn">Editar</button></h3>
+          <p class="editable">Desarrollamos planes estratégicos personalizados para impulsar el crecimiento de su empresa.<button class="edit-btn">Editar</button></p>
+        </div>
+        <div class="info-card">
+          <h3 class="editable">Optimización de Procesos<button class="edit-btn">Editar</button></h3>
+          <p class="editable">Analizamos y mejoramos sus procesos internos para aumentar la eficiencia operativa.<button class="edit-btn">Editar</button></p>
+        </div>
+        <div class="info-card">
+          <h3 class="editable">Gestión del Cambio<button class="edit-btn">Editar</button></h3>
+          <p class="editable">Le ayudamos a implementar cambios organizacionales de manera efectiva y sin contratiempos.<button class="edit-btn">Editar</button></p>
+        </div>
+        <div class="info-card">
+          <h3 class="editable">Análisis Financiero<button class="edit-btn">Editar</button></h3>
+          <p class="editable">Ofrecemos un análisis profundo de su situación financiera y recomendaciones para mejorarla.<button class="edit-btn">Editar</button></p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="sobre-nosotros" class="info-section">
+      <h2 class="editable">Sobre YFP<button class="edit-btn">Editar</button></h2>
+      <p class="editable">YFP es una firma de consultoría empresarial líder con más de 15 años de experiencia. Nos especializamos en proporcionar soluciones innovadoras y efectivas para empresas de todos los tamaños y sectores.<button class="edit-btn">Editar</button></p>
+      <p class="editable">Nuestro equipo de consultores altamente calificados combina experiencia práctica con conocimientos teóricos para ofrecer resultados tangibles a nuestros clientes.<button class="edit-btn">Editar</button></p>
+    </section>
+    
+    <section id="contacto" class="info-section">
+      <h2 class="editable">Contáctenos<button class="edit-btn">Editar</button></h2>
+      <p class="editable">Estamos aquí para ayudarle a alcanzar sus objetivos empresariales. No dude en ponerse en contacto con nosotros para discutir cómo podemos colaborar.<button class="edit-btn">Editar</button></p>
+      <p class="editable">Email: info@yfp-consultoria.com<button class="edit-btn">Editar</button></p>
+      <p class="editable">Teléfono: +34 91 123 4567<button class="edit-btn">Editar</button></p>
+      <p class="editable">Dirección: Calle Principal 123, 28001 Madrid, España<button class="edit-btn">Editar</button></p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 YFP Consultoría Empresarial. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const navLinks = document.querySelectorAll('nav a');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Función para habilitar la edición
+      function enableEditing() {
+        const editables = document.querySelectorAll('.editable');
+        
+        editables.forEach(editable => {
+          const editBtn = editable.querySelector('.edit-btn');
+          
+          editBtn.addEventListener('click', function() {
+            const content = editable.childNodes[0];
+            const text = content.textContent;
+            
+            editable.classList.add('edit-mode');
+            content.remove();
+            
+            const input = document.createElement('textarea');
+            input.value = text;
+            editable.insertBefore(input, editBtn);
+            input.focus();
+            
+            const saveBtn = document.createElement('button');
+            saveBtn.textContent = 'Guardar';
+            saveBtn.style.marginLeft = '10px';
+            editable.appendChild(saveBtn);
+            
+            saveBtn.addEventListener('click', function() {
+              const newText = input.value;
+              const newContent = document.createTextNode(newText);
+              editable.insertBefore(newContent, input);
+              input.remove();
+              saveBtn.remove();
+              editable.classList.remove('edit-mode');
+            });
+          });
+        });
+      }
+
+      enableEditing();
+    });
+  </script>
+</body></html>
